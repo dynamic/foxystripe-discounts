@@ -1,6 +1,6 @@
 {
     "name": "dynamic/foxystripe-discounts",
-    "description": "adds ability to offer discounts on purchase conditions",
+    "description": "adds ability to offer discounts based on purchase conditions",
     "authors": [
         {
             "name": "Dynamic, Inc",
@@ -8,27 +8,24 @@
         }
     ],
     "keywords": [
-        "silverstripe"
+        "silverstripe", "foxystripe", "ecommerce", "discounts"
     ],
     "type": "silverstripe-module",
     "license": "BSD-3-Clause",
     "require": {
         "silverstripe/cms": "^3.2",
         "silverstripe/framework": "^3.2",
-        "silverstripe/reactjs-common": "dev-master"
+        "dynamic/foxystripe": "2.0.x-dev"
     },
     "require-dev": {
         "phpunit/PHPUnit": "^3.7"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/open-sausages/silverstripe-reactjs-common"
-        }
-    ],
     "config": {
         "process-timeout": 600
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "extra": {
+        "installer-name": "foxystripe-discounts"
+    }
 }
