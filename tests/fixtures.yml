@@ -1,0 +1,22 @@
+ProductHolder:
+  default:
+    Title: "Products"
+  two:
+    Title: "Misc"
+ProductPage:
+  product1:
+    Title: Product 1
+    URLSegment: product-1
+    Price: 50
+    Weight: 1.5
+    Code: ABC123
+    ReceiptTitle: Product 1 - Receipt
+    Featured: 0
+    Available: 1
+    CategoryID: 1
+    ParentID: =>ProductHolder.default
+    ProductHolders: =>ProductHolder.two
+ProductDiscountTier:
+  fiveforten:
+    Quantity: 5
+    Percentage: 10
