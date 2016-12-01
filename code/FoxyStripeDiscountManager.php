@@ -47,4 +47,17 @@ class FoxyStripeDiscountManager extends DataExtension
             $fields->addFieldToTab('Root.Discounts', $discountGrid);
         }
     }
+
+    /**
+     * @return string
+     */
+    public function getDiscountFieldValue()
+    {
+        $tiers = $this->owner->ProductDiscountTiers();
+        $bulkString = '';
+        foreach ($tiers as $tier) {
+            $bulkString .= "|{$tier->Quantity}-{$tier->Percentage}";
+        }
+        return "{$this->owner->Title}{allunits{$bulkString}}";
+    }
 }

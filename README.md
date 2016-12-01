@@ -12,7 +12,13 @@ This is how you install foxystripe-discounts.
 
 ## Example usage
 
-You use foxystripe-discounts like this.
+	ProductPage:
+	  extensions:
+	    - FoxyStripeDiscountManager
+	ProductPage_Controller:
+      extensions:
+        - FoxyStripeDiscountExtension
+        
 
 ## Documentation
 

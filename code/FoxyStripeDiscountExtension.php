@@ -1,6 +1,6 @@
 <?php
 
-class FoxyStripeDiscountsPurchaseFormExtension extends Extension
+class FoxyStripeDiscountExtension extends Extension
 {
     /**
      * @param $form
